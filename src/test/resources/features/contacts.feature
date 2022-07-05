@@ -1,4 +1,4 @@
-Feature: Finworks app Create Contacts feature
+Feature: Finworks app Create Contacts
 
   Background:
 		#@FNW-520
