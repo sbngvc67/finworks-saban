@@ -55,7 +55,7 @@ public class FinworksContactsPage {
     @FindBy(name = "website")
     public WebElement websiteBox;
 
-    @FindBy(id = "o_field_input_339")
+    @FindBy(xpath = "//*[@id=\"o_field_input_337\"]")
     public WebElement stateDropdown;
 
     @FindBy(id = "o_field_input_341")

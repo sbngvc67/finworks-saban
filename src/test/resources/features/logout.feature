@@ -1,4 +1,4 @@
-Feature: Logging out
+Feature: Finworks app logging out
 
   Background:
 		#@FNW-520
