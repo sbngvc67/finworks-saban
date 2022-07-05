@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 //"pretty",
+                "json:target/cucumber.json",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
@@ -15,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/finworks/step_definitions",
         dryRun = false,
-        tags = "@FNW-509",
+        tags = "@FNW-519",
         publish = false
 )
 public class CukesRunner {

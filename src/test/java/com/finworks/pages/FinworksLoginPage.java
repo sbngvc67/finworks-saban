@@ -27,6 +27,17 @@ public class FinworksLoginPage {
         return userVerification;
     }
 
+    @FindBy(name = "login")
+    public WebElement fillOutThisFieldMessageEmailBox;
+
+    @FindBy(name = "password")
+    public WebElement fillOutThisFieldMessagePasswordBox;
+
+    @FindBy(xpath = "//p[@class='alert alert-danger']")
+    public WebElement errorMessage;
+
+
+
 
 
 
