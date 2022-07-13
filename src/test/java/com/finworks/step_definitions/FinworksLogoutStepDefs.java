@@ -30,15 +30,15 @@ public class FinworksLogoutStepDefs {
     @Given("user is logged in the page")
     public void user_is_logged_in_the_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("finworks.url"));
-        //finworksLoginPage.emailBox.sendKeys("salesmanager15@info.com");
-        //finworksLoginPage.passwordBox.sendKeys("salesmanager");
-        //finworksLoginPage.loginButton.click();
+        finworksLoginPage.emailBox.sendKeys("salesmanager15@info.com");
+        finworksLoginPage.passwordBox.sendKeys("salesmanager");
+        finworksLoginPage.loginButton.click();
     }
     @When("user enters email {string} and {string} and click the login button")
     public void userEntersEmailAndAndClickTheLoginButton(String email, String password) {
-            finworksLoginPage.emailBox.sendKeys(email);
-            finworksLoginPage.passwordBox.sendKeys(password);
-            finworksLoginPage.loginButton.click();
+            //finworksLoginPage.emailBox.sendKeys(email);
+            //finworksLoginPage.passwordBox.sendKeys(password);
+            //finworksLoginPage.loginButton.click();
     }
 
     @When("User clicks on {string}")

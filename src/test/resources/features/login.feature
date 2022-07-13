@@ -1,4 +1,4 @@
-Feature: Finworks app login feature
+Feature: Finworks app login
 
 
   Background:
