@@ -73,6 +73,20 @@ public class Driver {
                         e.printStackTrace();
                     }
                     break;
+                case "saucelab":
+                    // assign your grid server address
+
+                    try {
+                        URL url = new URL("https://oauth-sbngvc67-95ea2:06cc0a5d-59a0-4cd4-b312-18ce9ec1e8e0@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                        desiredCapabilities.setBrowserName("chrome");
+                        driverPool.set(new RemoteWebDriver(url,desiredCapabilities));
+                        driverPool.get().manage().window().maximize();
+                        driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                    break;
             }
         }
 
@@ -89,5 +103,5 @@ public class Driver {
             driverPool.remove();
         }
     }
-
+//https://oauth-sbngvc67-95ea2:06cc0a5d-59a0-4cd4-b312-18ce9ec1e8e0@ondemand.eu-central-1.saucelabs.com:443/wd/hub
 }

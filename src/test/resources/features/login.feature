@@ -61,7 +61,7 @@ Feature: Finworks app login feature
     When user enters email "<email>"
     And user enters password "<password>"
     And user clicks the login button
-    Then user should see the error message "<errorMessage>"
+    Then user should see the error message "Wrong login/password"
 
     Examples:
 

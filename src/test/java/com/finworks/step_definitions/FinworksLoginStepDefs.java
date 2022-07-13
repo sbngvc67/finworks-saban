@@ -22,7 +22,9 @@ public class FinworksLoginStepDefs {
     }
     @When("user enters email {string}")
     public void user_enters(String email) {
+        finworksLoginPage.emailBox.clear();
         finworksLoginPage.emailBox.sendKeys(email);
+
     }
     @And("user enters password {string}")
     public void userEntersPassword(String password) {
